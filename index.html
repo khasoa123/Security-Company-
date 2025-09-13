@@ -54,5 +54,37 @@
   <footer>
     <p>© 2025 SecureShield Company | Licensed & Certified</p>
   </footer>
+  <!-- Pop-up Form -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Request Free Security Assessment</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea placeholder="Tell us about your security needs..." required></textarea>
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Open Popup when button clicked
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', function(e){
+      if(this.innerText.includes('Request Free Assessment')){
+        e.preventDefault();
+        document.getElementById('popup').style.display = 'flex';
+      }
+    });
+  });
+
+  // Close Popup
+  function closePopup(){
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
+
 </body>
 </html>
