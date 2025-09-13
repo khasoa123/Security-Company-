@@ -1,0 +1,16 @@
+body { margin:0; font-family: Arial, sans-serif; color:#333; }
+.hero {
+  height:100vh; background-size:cover; background-position:center;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+}
+.overlay { background:rgba(0,0,0,0.6); padding:40px; color:#fff; border-radius:10px; }
+.btn { background:#1976d2; color:#fff; padding:12px 25px; text-decoration:none; border-radius:5px; }
+
+section { padding:60px 20px; text-align:center; }
+.cards { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+.card { background:#f9f9f9; padding:20px; border-radius:10px; width:200px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+.icons { display:flex; justify-content:center; gap:30px; flex-wrap:wrap; }
+.icons div { background:#eef3f7; padding:20px; border-radius:10px; width:200px; }
+
+.contact { background:#1976d2; color:#fff; padding:40px; }
+footer { background:#111; color:#aaa; text-align:center; padding:20px; margin-top:40px; }
